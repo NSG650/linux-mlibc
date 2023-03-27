@@ -1,0 +1,8 @@
+name=mlibc
+version=cf2f6015937c4eedc8f14ee5cb9be634345af1c0
+tarball_url="https://github.com/no92/mlibc/archive/${version}.tar.gz"
+tarball_blake2b="3e93bb2645db44578b2292d9acb12e458891deb3dcb1db4a949d2dddc25e75e976a9c6e2447b340f1a04691dd8520420101d691fd709d315043f9e10fabbbda0"
+
+regenerate() {
+    true
+}

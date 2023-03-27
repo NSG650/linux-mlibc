@@ -1,0 +1,19 @@
+name=linux
+from_source=linux
+revision=1
+imagedeps="base-devel bc libelf pahole cpio rsync"
+
+configure() {
+    cp -rp "${source_dir}"/. ./
+}
+
+build() {
+    make olddefconfig
+    make mod2yesconfig
+    make -j${parallelism}
+}
+
+install() {
+    mkdir -p "${dest_dir}"/boot
+    cp arch/x86/boot/bzImage "${dest_dir}"/boot/vmlinuz
+}

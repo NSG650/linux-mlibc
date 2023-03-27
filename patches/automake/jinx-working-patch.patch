@@ -1,0 +1,27 @@
+diff --git automake-clean/lib/config.sub automake-workdir/lib/config.sub
+index d74fb6d..a407046 100755
+--- automake-clean/lib/config.sub
++++ automake-workdir/lib/config.sub
+@@ -1707,7 +1707,7 @@ fi
+ # Now, validate our (potentially fixed-up) OS.
+ case $os in
+ 	# Sometimes we do "kernel-libc", so those need to count as OSes.
+-	musl* | newlib* | relibc* | uclibc*)
++	musl* | newlib* | relibc* | uclibc* | mlibc*)
+ 		;;
+ 	# Likewise for "kernel-abi"
+ 	eabi* | gnueabi*)
+@@ -1766,11 +1766,11 @@ esac
+ # (given a valid OS), if there is a kernel.
+ case $kernel-$os in
+ 	linux-gnu* | linux-dietlibc* | linux-android* | linux-newlib* \
+-		   | linux-musl* | linux-relibc* | linux-uclibc* )
++		   | linux-musl* | linux-relibc* | linux-uclibc* | linux-mlibc*)
+ 		;;
+ 	uclinux-uclibc* )
+ 		;;
+-	-dietlibc* | -newlib* | -musl* | -relibc* | -uclibc* )
++	-dietlibc* | -newlib* | -musl* | -relibc* | -uclibc* | -mlibc*)
+ 		# These are just libc implementations, not actual OSes, and thus
+ 		# require a kernel.
+ 		echo "Invalid configuration \`$1': libc \`$os' needs explicit kernel." 1>&2

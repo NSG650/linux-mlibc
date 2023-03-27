@@ -1,0 +1,9 @@
+name=limine
+version=4.20230325.0
+tarball_url="https://github.com/limine-bootloader/limine/releases/download/v${version}/limine-${version}.tar.xz"
+tarball_blake2b="ce0ca350667210e0bf1fedfebee97e1763ca706b7f756e4d81fcd0ba35df436efac987bc9cb784dfc99ac770fcc5feee6145d763dc8df67f61231013262511ec"
+hostdeps="autoconf automake libtool pkg-config"
+
+regenerate() {
+    libtoolize -cfvi && autoreconf -fvi
+}
