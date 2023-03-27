@@ -18,7 +18,8 @@ configure() {
         --with-system-zlib            \
         --with-gmp=${sysroot_dir}/usr \
         --enable-shared               \
-        --enable-host-shared
+        --enable-host-shared \
+        --disable-gprofng
 }
 
 build() {
