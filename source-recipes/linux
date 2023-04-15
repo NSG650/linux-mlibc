@@ -1,7 +1,7 @@
 name=linux
-version=6.2.8
+version=6.2.11
 tarball_url="https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-${version}.tar.xz"
-tarball_blake2b="2af871403a7abb3170ceb3f065fe162a82b80335dac7d6a8207f1cb12f235e2900b61a578eb8426b1c3854d42a227b0bda96bfdd3cfcda6797dbd68df8a205f2"
+tarball_blake2b="966102d551a6bd4b4df453d2b2ea801c8992536e030a17dab2b361def6ac0e45a63f8e348cf762e22be97be65a670f5c3fc71fe01c14badbca3197b367b4e140"
 allow_network=yes
 
 regenerate() {
